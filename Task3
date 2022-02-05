@@ -1,0 +1,23 @@
+package com.company;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+	// write your code here
+        double x = 0.0;
+        Scanner in = new Scanner(System.in);
+        int a = in.nextInt();
+
+        if (a<100){
+            x = 1.05;
+        } else if (a>=100&&a<200){
+            x = 1.07;
+        } else {
+            x = 1.1;
+        }
+        x*=a;
+        System.out.println(x);
+        in.close();
+    }
+}
