@@ -1,0 +1,21 @@
+package com.company;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+	// write your code here
+        Scanner in = new Scanner(System.in);
+        System.out.print("Введите сумму вклада: ");
+        float sum = in.nextFloat();
+        System.out.print("Введите срок вклада в месяцах: ");
+        int month = in.nextInt();
+        int i = 0;
+       while (i<month){
+           sum*=1.07;
+           i+=1;
+       }
+       System.out.printf("После %d месяцев в банке сумма вклада составит %f", month, sum);
+       in.close();
+    }
+}
