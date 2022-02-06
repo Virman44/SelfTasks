@@ -1,0 +1,32 @@
+package com.company;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+	// write your code here
+        Scanner in = new Scanner(System.in);
+        System.out.print("Введите первое число: ");
+        int a = in.nextInt();
+        System.out.print("Введите второе число: ");
+        int b = in.nextInt();
+        System.out.println("Введите номер операции: 1.Сложение 2.Вычитание 3.Умножение");
+        int c = in.nextInt();
+
+       switch(c){
+           case 1:
+               System.out.printf("Результат операции: %d", a+=b);
+               break;
+           case 2:
+               System.out.printf("Результат операции: %d", a-=b);
+               break;
+           case 3:
+               System.out.printf("Результат операции: %d", a*=b);
+               break;
+           default:
+               System.out.println("Операция не определена");
+
+       }
+        in.close();
+    }
+}
