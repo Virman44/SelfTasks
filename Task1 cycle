@@ -1,0 +1,14 @@
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+	// write your code here
+        long people = 10000000;
+        double plus = 1.006;
+       for (int i=0; i<10; i++){
+          people *= plus;
+       }
+       System.out.println("Рождаемость через 10 лет: "+people);
+    }
+}
