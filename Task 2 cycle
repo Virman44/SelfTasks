@@ -1,0 +1,23 @@
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+	// write your code here
+        long people = 10000000;
+        int plus = 14;
+        int minus = 8;
+        int dif;
+       for (int i=0; i<10; i++){
+           dif = plus - minus;
+          people += people * dif / 1000;
+          if (plus > 7){
+              plus-=1;
+          }
+          if (minus > 6){
+              minus-=1;
+          }
+       }
+       System.out.println("Рождаемость через 10 лет: "+people);
+    }
+}
